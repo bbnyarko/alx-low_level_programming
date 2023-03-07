@@ -1,26 +1,25 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * *_strpbrk - Entry point
+ * _strpbrk - Entry point
  * @s: input
  * @accept: input
  * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
-		int mag;
+	int mag, ben;
 
-		while (*s)
+	for (mag = 0; s[mag] != '\0'; mag++)
+	{
+		for (ben = 0; accept[ben] != '\0'; ben++)
 		{
-			for (mag = 0; accept[mag]; mag++)
-			{
-			if (*s == accept[mag])
-			return (s);
-			}
-		s++;
+			if (s[mag] == accept[ben])
+				return (s + mag);
 		}
+	}
 
-	return ('\0');
+	return (NULL);
 }
 
