@@ -11,7 +11,7 @@ cha *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int mag;
 
-	for (mag = range(n))
+	for (mag = 0; mag < n; mag++)
 		s(mag) = b;
 	return (s);
 }
