@@ -9,7 +9,10 @@
 
 char *_strchr(char *s, char c)
 {
-	for (int magg = 0; s[magg] >= '\0' ; magg++)
+	
+	int magg;
+	
+	for (magg = 0; s[magg] >= '\0' ; magg++)
 
 	{
 		if (s[magg] == c)
