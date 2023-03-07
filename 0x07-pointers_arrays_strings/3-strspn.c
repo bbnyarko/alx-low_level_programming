@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 				mag++;
 				break;
 			}
-			else if (accept[ben+1] == '\0')
+			else if (accept[ben + 1] == '\0')
 				return (mag);
 		}
 		s++;
