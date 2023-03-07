@@ -2,12 +2,12 @@
 
 /**
  * _strspn - Entry function
- * @s:
- * @accept:
+ * @s:input str
+ * @accept:input
  * Return: str
  */
 
-unsigned int(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int mag = 0;
 	int ben;
