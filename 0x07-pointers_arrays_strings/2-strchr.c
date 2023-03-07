@@ -10,9 +10,8 @@
 
 char *_strchr(char *s, char c)
 {
-	
 	int magg;
-	
+
 	for (magg = 0; s[magg] >= '\0' ; magg++)
 
 	{
