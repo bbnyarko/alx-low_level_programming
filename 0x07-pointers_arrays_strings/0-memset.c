@@ -8,11 +8,11 @@
  * Return: changed array with new value for n bytes
  */
 
-cha *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int mag;
 
-	for (range(mag))
+	for (mag = 0; mag < n; mag++))
 		s[mag] = b;
 	return (s);
 }
