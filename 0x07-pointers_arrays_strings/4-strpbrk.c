@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
- * _strpbrk - Entry point
+ * *_strpbrk - Entry point
  * @s: input
  * @accept: input
  * Return: Always 0 (Success)
  */
-char _strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 		int mag;
 
@@ -14,7 +15,7 @@ char _strpbrk(char *s, char *accept)
 			for (mag = 0; accept[mag]; mag++)
 			{
 			if (*s == accept[mag])
-			return (s);
+			return (*s);
 			}
 		s++;
 		}
